@@ -1,0 +1,178 @@
+/* 全体 */
+* {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    background-color: #ffffff;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 980px;
+}
+
+header h1 {
+    font-size: 34px;
+    font-weight: bold;
+    border: solid 1px #000;
+    padding: 0 20px ;
+}
+
+header > a {
+    text-decoration: none;
+}
+
+#nav-link {
+    font-size: 34px;
+}
+
+#nav-link > a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* メインビジュアル */
+#main-visual > img {
+    width: 100%;
+}
+
+/* About */
+#about {
+    max-width: 820px;
+    margin: 80px auto;
+}
+
+.index-h1 {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#about-flex > div > h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#about-flex > div > ul > li {
+    font-size: 18px;
+}
+
+#about-flex {
+    width: 100%;
+    display: flex;
+    margin: 20px;
+}
+
+#about-flex > div {
+    width: 50%;
+}
+
+#about-photo {
+    border-radius: 280px 280px 280px 280px;
+}
+
+/* Works */
+#works {
+    max-width: 752px;
+    margin: 80px auto;
+}
+
+.works-paragraph {
+    font-size: 18px;
+}
+
+#works-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#works-flex > div {
+    width: 30%;
+}
+
+.works-photo {
+    width: 100%;
+}
+
+/* フッター */
+footer p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* スマートフォン用 */
+@media screen and (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header h1 {
+        margin-left: 10px;
+    }
+
+    #nav-link {
+        font-size: 24px;
+        width: 50%;
+    }
+
+    /* About */
+    #about {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    #about-flex {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #about-flex > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    #about-flex > div > h2 {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    #about-flex > div > ul > li {
+        text-align: left;
+        margin: 0 20px;
+    }
+
+    /* Works */
+    #works {
+        width: 100%;
+        margin: 80px auto;
+    }
+
+    #works-flex {
+        display: block;
+        text-align: center;
+        width: 95%;
+    }
+
+    #works-flex > div {
+        width: 100%;
+        margin: 10px;
+    }
+}
